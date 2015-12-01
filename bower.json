@@ -1,0 +1,19 @@
+{
+  "name": "feedbox",
+  "version": "0.0.0",
+  "description": " ",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "tmp",
+    "package.json",
+    "gulpfile.json"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}
