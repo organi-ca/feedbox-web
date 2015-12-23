@@ -47,8 +47,12 @@ var config = {
   outputJS:       'feedbox.app.js',
   outputJSVendor: 'feedbox.vendor.js',
   scriptFiles:    'assets/javascripts/**/*.js',
-  vendorFiles:    ['jquery','underscore']
+  vendorFiles:    ["angular", "angular-resource", "angular-animate",
+                   "angular-cookies", "angular-route", "angular-sanitize",
+                   "angular-touch", "angular-local-storage",
+                   'jquery','underscore', "ng-file-upload"]
 };
+
 
 config.mainFilePath    = path.join(config.tmpPath, config.outputCSS);
 config.mainMinFilePath = path.join(config.tmpPath, config.outputCSSMin);
