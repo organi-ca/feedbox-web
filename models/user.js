@@ -26,7 +26,7 @@ module.exports = function(mongoose){
 
     // generate a salt
 
-    var salt = bcrypt.genSaltSync(process.env.SALT_WORK_FACTOR || config.SALT_WORK_FACTOR);
+    var salt = bcrypt.genSaltSync(parseInt(process.env.SALT_WORK_FACTOR) || config.SALT_WORK_FACTOR);
     var hash = bcrypt.hashSync(user.password, salt);
     user.password = hash;
 
