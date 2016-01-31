@@ -33,3 +33,13 @@ exports.signOut = function(req, res) {
     }
   });
 }
+
+exports.createUser = function(req, res) {
+  models.user.create(req.body, function(err, result){
+    if (err) {
+      res.send(err);
+    } else {
+      res.json({ user : result });
+    }
+  });
+}

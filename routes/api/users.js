@@ -5,7 +5,6 @@ var users = express.Router();
 
 users.route('/')
   .get(UsersCtrl.getUsers)
-  .post(UsersCtrl.createUser);
 
 users.route('/:id')
   .get(UsersCtrl.getUser)

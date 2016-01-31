@@ -5,9 +5,10 @@ var sessions = express.Router();
 
 
 sessions.route('/')
-     .post(SessionsCtrl.signIn);
+  .post(SessionsCtrl.signIn)
+  .delete(SessionsCtrl.signOut);
 
-sessions.route('/')
-     .delete(SessionsCtrl.signOut);
+sessions.route('/register')
+  .post(SessionsCtrl.createUser);
 
 module.exports = sessions;
