@@ -88,7 +88,7 @@ module.exports = function(mongoose){
     var secretToken = process.env.SECRET_TOKEN || config.SECRET_TOKEN;
     var code = Date.now() + secretToken + access.user_id;
 
-    var salt = bcrypt.genSaltSync(process.env.SALT_WORK_FACTOR || config.SALT_WORK_FACTOR);
+    var salt = bcrypt.genSaltSync(parseInt(process.env.SALT_WORK_FACTOR) || config.SALT_WORK_FACTOR);
     return bcrypt.hashSync(code, salt);
   }
 
