@@ -1,0 +1,9 @@
+{
+  "mongodb" : {
+    "name": "feedbox_db",
+    "server" : "mongodb://localhost:27017/feedbox_db"
+  },
+
+  "SALT_WORK_FACTOR":10,
+  "SECRET_TOKEN": "---%%%TODOSPENSAMOSenCOSAS%%%---"
+}
