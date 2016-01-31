@@ -1,4 +1,4 @@
-var SessionsCtrl = require('../../controllers/api/SessionsCtrl');
+var SessionsCtrl = require('../../controllers/api/sessionsCtrl');
 
 var express = require('express');
 var sessions = express.Router();
